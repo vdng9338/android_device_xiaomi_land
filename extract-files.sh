@@ -55,6 +55,17 @@ if [ -z "$SRC" ]; then
     SRC=adb
 fi
 
+#
+# Hax libaudcal.so to store acdbdata in new path
+#
+function blob_fixup() {
+    case "${1}" in
+    product/lib64/lib-imsvideocodec.so)
+        patchelf --add-needed "libui_shim.so" "${2}"
+        ;;
+    esac
+}
+
 # Initialize the helper
 setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" false "$CLEAN_VENDOR"
 
