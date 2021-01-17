@@ -19,7 +19,7 @@ LOCAL_PATH := device/xiaomi/land
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-havoc
 
 # Properties
 -include $(LOCAL_PATH)/vendor_prop.mk
@@ -46,10 +46,6 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
-
-# Ambient display
-PRODUCT_PACKAGES += \
-    XiaomiDoze
 
 # ANT+
 PRODUCT_PACKAGES += \
