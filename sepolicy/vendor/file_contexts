@@ -78,4 +78,4 @@
 /sys/class/timed_output/vibrator/vtg_level           u:object_r:sysfs_vibrator:s0
 
 # Touch
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.xiaomi_;land      u:object_r:hal_lineage_touch_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.land      u:object_r:hal_lineage_touch_default_exec:s0
