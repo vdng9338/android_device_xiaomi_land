@@ -99,6 +99,10 @@ BLUETOOTH_HCI_USE_MCT                       := true
 QCOM_BT_USE_SMD_TTY                         := true
 QCOM_BT_USE_BTNV := true
 
+# Smartcharge
+TARGET_SMARTCHARGE_CONTROL_NODE := "sys/class/power_supply/battery/input_suspend"
+TARGET_SMARTCHARGE_REVERSE_LOGIC := true
+
 # Build
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
