@@ -14,4 +14,10 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_land.mk
+    $(LOCAL_DIR)/xtended_land.mk
+
+COMMON_LUNCH_CHOICES := \
+    xtended_land-user \
+    xtended_land-userdebug \
+    xtended_land-eng
+

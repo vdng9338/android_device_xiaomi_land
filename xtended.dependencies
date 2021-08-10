@@ -1,0 +1,14 @@
+[
+ {
+   "repository": "sairam1411/vendor_xiaomi_land",
+   "target_path": "vendor/xiaomi/land",
+   "branch": "11.x",
+   "remote": "github"
+ },
+ {
+   "repository": "sairam1411/kernel_xiaomi_land",
+   "target_path": "kernel/xiaomi/land",
+   "branch": "11.x",
+   "remote": "github"
+ }
+]
