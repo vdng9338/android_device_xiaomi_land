@@ -98,8 +98,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive \
-    persist.vendor.btstack.enable.splita2dp=false \
-    persist.vendor.qcom.bluetooth.enable.splita2dp=false \
     persist.vendor.bt.a2dp.aac_whitelist=false \
     persist.bluetooth.a2dp_offload.disabled=true \
     persist.vendor.bluetooth.modem_nv_support=true \
@@ -226,7 +224,8 @@ ro.telephony.call_ring.multiple=false \
 ro.telephony.default_network=22,22 \
 ro.telephony.use_old_mnc_mcc_format=true \
 service.qti.ims.enabled=1 \
-vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
+vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
+persist.vendor.qti.telephony.vt_cam_interface=1
 
 # Tcp
 PRODUCT_PROPERTY_OVERRIDES += \
